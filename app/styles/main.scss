@@ -1,0 +1,78 @@
+$text-color: #333;
+$link-color: #FC5B5B;
+
+@import 'fonts';
+
+html, body {
+    background: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;
+    height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+.container {
+    a {
+        color: $link-color;
+        &:hover {
+            color: darken($link-color, 10%);
+            text-decoration: none;
+        }
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        background: $link-color;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 730px;
+      }
+}
+
+.title-card {
+    color: #fff;
+    text-align: center;
+    padding: 3em;
+    margin-bottom: 2em;
+    background: {
+        image: url(../images/title_cards/IMG_3079.jpg);
+        size: cover;
+        position: 0 75%;
+        repeat: no-repeat;
+    }
+
+    h1 {
+        margin: 1em 0;
+        text-shadow: 1px 1px 1px #333;
+    }
+}
+
+footer {
+
+    height: 60px;
+    background-color: #eee;
+
+    font-size: 3em;
+
+    .social-links {
+        font-family: 'Mono Social Icons Font';
+        margin: 0;
+    }
+}
