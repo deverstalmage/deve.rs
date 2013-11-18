@@ -1,8 +1,14 @@
 <div ng-repeat="project in projects" class="project">
-    <h2>{{project.name}}</h2>
-    <div class="image-picker">
-        <img ng-src="images/{{project.images[0]}}">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>{{project.name}}</h2>
+
+            <blockquote>{{project.quote}}</blockquote>
+            <p ng-bind-html="project.description"></p>
+        </div>
+        <div class="col-lg-6" style="overflow: hidden;">
+            <img ng-src="images/{{project.image}}" class="screenshot">
+        </div>
     </div>
-    <blockquote>{{project.quote}}</blockquote>
-    <p ng-bind-html="project.description"></p>
+
 </div>
