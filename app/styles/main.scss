@@ -64,6 +64,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.project {
+    clear: both;
+}
+
+.image-picker {
+    max-width: 40%;
+    margin: 0 0 1em;
+
+    img {
+        max-width: 100%;
+    }
+}
+
 footer {
 
     height: 60px;
@@ -74,5 +87,10 @@ footer {
     .social-links {
         font-family: 'Mono Social Icons Font';
         margin: 0;
+
+        .list-label {
+            vertical-align: middle;
+            font-size: 0.5em;
+        }
     }
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-var deversApp = angular.module('deve.rsApp', ['ngRoute']);
+var deversApp = angular.module('deve.rsApp', ['ngRoute', 'ngSanitize']);
 
 deversApp
     .config(function ($routeProvider) {
@@ -8,7 +8,7 @@ deversApp
             .when('/', {
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl',
-                title: 'Welcome'
+                title: 'About Me'
             })
             .when('/projects', {
                 templateUrl: 'views/projects.html',

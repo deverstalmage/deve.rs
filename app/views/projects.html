@@ -1,3 +1,8 @@
-<div ng-repeat="project in projects">
-    project: {{project.name}}
+<div ng-repeat="project in projects" class="project">
+    <h2>{{project.name}}</h2>
+    <div class="image-picker">
+        <img ng-src="images/{{project.images[0]}}">
+    </div>
+    <blockquote>{{project.quote}}</blockquote>
+    <p ng-bind-html="project.description"></p>
 </div>
