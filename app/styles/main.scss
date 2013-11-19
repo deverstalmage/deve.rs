@@ -10,10 +10,19 @@ html, body {
     height: 100%;
 }
 
+.view.ng-enter, .view.ng-leave {
+  transition: all 0.25s;
+}
+
+.view.ng-enter { opacity: 0; }        /* starting animations for enter */
+.view.ng-enter.ng-enter-active { opacity: 1; } /* terminal animations for enter */
+.view.ng-leave { opacity: 1; }        /* starting animations for leave */
+.view.ng-leave.ng-leave-active { opacity: 0; } /* terminal animations for leave */
+
 #wrap {
     min-height: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto -60px;
     padding: 20px 0 60px;
 }
 
@@ -26,6 +35,50 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+    float: left;
+
+    .hidden-xs-inline {
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .glyphicon {
+        font-size: 0.75em;
+        vertical-align: baseline;
+        margin-left: 0.5em;
+    }
+}
+
+.navbar-toggle {
+    border: 1px solid #333;
+    margin-top: 0;
+
+    .icon-bar {
+        background-color: #333;
+    }
+}
+
+.nav {
+    @media only screen and (max-width: 767px) {
+        float: none !important;
+        clear: both;
+        margin-bottom: 10px;
+    }
+}
+
+.nav-pills {
+    li {
+        @media only screen and (max-width: 767px) {
+            float: none;
+        }
+
+        a {
+            @media only screen and (max-width: 767px) {
+                border-radius: 0;
+            }
+        }
+    }
 }
 
 .container {
@@ -43,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
     @media (min-width: 768px) {
         max-width: 730px;
-      }
+    }
 }
 
 .title-card {
@@ -69,7 +122,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 4em;
 
     .screenshot {
-        height: 25em;
+        height: 10em;
+        transition: all 1s;
+
+        &:hover {
+            height: 25em;
+        }
+
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            height: auto;
+
+            &:hover {
+                height: auto;
+            }
+        }
     }
 }
 
@@ -87,6 +154,10 @@ footer {
         .list-label {
             vertical-align: middle;
             font-size: 0.5em;
+
+            @media only screen and (max-width: 767px) {
+                display: none;
+            }
         }
     }
 }

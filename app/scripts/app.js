@@ -1,6 +1,6 @@
 'use strict';
 
-var deversApp = angular.module('deve.rsApp', ['ngRoute', 'ngSanitize']);
+var deversApp = angular.module('deve.rsApp', ['ngRoute', 'ngSanitize', 'ngAnimate']);
 
 deversApp
     .config(function ($routeProvider) {

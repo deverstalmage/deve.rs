@@ -32,11 +32,17 @@
         <div id="wrap">
             <div class="container">
                 <div class="header">
-                    <ul class="nav nav-pills pull-right">
+                    <h3 class="text-muted">Devers <span class="hidden-xs-inline">Talmage</span> <a href="mailto:deverstalmage@gmail.com" target="_blank"><span class="glyphicon glyphicon-envelope"></span></a></h3>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="nav nav-pills pull-right collapse navbar-collapse">
                         <li ng-class="{active:(title == 'About Me')}"><a href="#/"><span class="glyphicon glyphicon-user"></span> About</a></li>
                         <li ng-class="{active:(title == 'Projects')}"><a href="#/projects"><span class="glyphicon glyphicon-wrench"></span> Projects</a></li>
                     </ul>
-                    <h3 class="text-muted">Devers Talmage</h3>
                 </div>
             </div>
 
@@ -44,7 +50,7 @@
                 <h1 ng-bind="title"><img src="images/ajax-loader.gif"></h1>
             </div>
 
-            <div class="container" ng-view></div>
+            <div class="container view" ng-view></div>
 
         </div>
 
@@ -81,6 +87,7 @@
         <!-- endbuild -->
 
         <!-- build:js scripts/modules.js -->
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
         <script src="bower_components/angular-resource/angular-resource.js"></script>
         <script src="bower_components/angular-cookies/angular-cookies.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
