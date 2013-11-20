@@ -8,16 +8,48 @@ html, body {
     font-family: 'Roboto', sans-serif;
     color: $text-color;
     height: 100%;
+    overflow-x: hidden;
 }
 
-.view.ng-enter, .view.ng-leave {
-  transition: all 0.25s;
+.view-animation.ng-enter,
+.view-animation.ng-leave {
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  position: relative;
 }
 
-.view.ng-enter { opacity: 0; }        /* starting animations for enter */
-.view.ng-enter.ng-enter-active { opacity: 1; } /* terminal animations for enter */
-.view.ng-leave { opacity: 1; }        /* starting animations for leave */
-.view.ng-leave.ng-leave-active { opacity: 0; } /* terminal animations for leave */
+.view-animation.ng-enter {
+    transition-delay: 0.25s;
+}
+
+.view-animation.ng-enter {
+    left: -100%;
+}
+.view-animation.ng-leave.ng-leave-active {
+    right: -100%;
+    // opacity: 0;
+}
+.view-animation.ng-leave {
+    right: 0;
+}
+.view-animation.ng-enter.ng-enter-active {
+    left: 0;
+    // opacity: 1;
+}
+
+
+a {
+    .glyphicon, .symbol {
+        transition: all 0.25s linear;
+        display: inline-block;
+    }
+
+    &:hover .glyphicon, &:hover .symbol {
+        -webkit-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+}
 
 #wrap {
     min-height: 100%;
@@ -65,6 +97,8 @@ h1, h2, h3, h4, h5, h6 {
         clear: both;
         margin-bottom: 10px;
     }
+    position: relative;
+    z-index: 100;
 }
 
 .nav-pills {
@@ -73,9 +107,26 @@ h1, h2, h3, h4, h5, h6 {
             float: none;
         }
 
+        margin: 0 0.5em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
         a {
             @media only screen and (max-width: 767px) {
                 border-radius: 0;
+            }
+
+            .glyphicon {
+                transition: all 0.25s linear;
+                display: inline-block;
+            }
+
+            &:hover .glyphicon {
+                -webkit-transform: rotate(15deg);
+                -o-transform: rotate(15deg);
+                transform: rotate(15deg);
             }
         }
     }
@@ -99,6 +150,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.headshot {
+    margin: 0 0 1em 1em;
+    max-width: 15em;
+}
+
 .title-card {
     color: #fff;
     text-align: center;
@@ -111,8 +167,16 @@ h1, h2, h3, h4, h5, h6 {
         repeat: no-repeat;
     }
 
+    z-index: 0;
+
+    -webkit-transform: matrix(1, -0.05, 0, 1, 0, 0);
+    -o-transform: matrix(1, -0.05, 0, 1, 0, 0);
+    transform: matrix(1, -0.05, 0, 1, 0, 0);
+
     h1 {
-        margin: 1em 0;
+        font-family: "Playball", serif;
+        font-size: 6em;
+        margin: 0;
         text-shadow: 1px 1px 1px #333;
     }
 }

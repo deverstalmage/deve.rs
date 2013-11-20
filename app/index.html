@@ -8,13 +8,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title ng-bind="'Deve.rs &mdash; ' + title">Deve.rs</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,400italic,500italic,300italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,400italic,500italic,300italic|Playball' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
@@ -42,6 +42,7 @@
                     <ul class="nav nav-pills pull-right collapse navbar-collapse">
                         <li ng-class="{active:(title == 'About Me')}"><a href="#/"><span class="glyphicon glyphicon-user"></span> About</a></li>
                         <li ng-class="{active:(title == 'Projects')}"><a href="#/projects"><span class="glyphicon glyphicon-wrench"></span> Projects</a></li>
+                        <li ng-class="{active:(title == 'Resume')}"><a href="#/resume"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +51,7 @@
                 <h1 ng-bind="title"><img src="images/ajax-loader.gif"></h1>
             </div>
 
-            <div class="container view" ng-view></div>
+            <div class="container view-animation" ng-view></div>
 
         </div>
 
@@ -58,6 +59,7 @@
             <div class="container">
                 <ul class="social-links list-inline">
                     <li class="list-label">Find me online: </li>
+                    <li><a href="mailto:deverstalmage@gmail.com" target="_blank"><span class='symbol'>email</span></a></li>
                     <li><a href="http://instagram.com/devers" target="_blank"><span class='symbol'>instagram</span></a></li>
                     <li><a href="http://github.com/deverstalmage" target="_blank"><span class='symbol'>githubalt</span></a></li>
                     <li><a href="http://www.linkedin.com/pub/devers-talmage/5b/189/3a9" target="_blank"><span class='symbol'>linkedin</span></a></li>
@@ -87,6 +89,7 @@
         <!-- endbuild -->
 
         <!-- build:js scripts/modules.js -->
+        <script src="bower_components/angular-touch/angular-touch.js"></script>
         <script src="bower_components/angular-animate/angular-animate.js"></script>
         <script src="bower_components/angular-resource/angular-resource.js"></script>
         <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -100,6 +103,7 @@
         <script src="scripts/services/projects.js"></script>
         <script src="scripts/services/skills.js"></script>
         <script src="scripts/controllers/projects.js"></script>
+        <script src="scripts/controllers/resume.js"></script>
         <!-- endbuild -->
     </body>
 </html>
