@@ -5,7 +5,7 @@
         </div>
         <div class="col-lg-6 col-lg-pull-6">
             <h2>{{project.name}}</h2>
-            <blockquote>{{project.quote}}</blockquote>
+            <blockquote ng-show="project.quote">{{project.quote}}</blockquote>
             <p ng-bind-html="project.description"></p>
         </div>
     </div>

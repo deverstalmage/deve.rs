@@ -8,7 +8,7 @@ deversApp
             .when('/', {
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl',
-                title: 'About Me'
+                title: 'Web Developer'
             })
             .when('/projects', {
                 templateUrl: 'views/projects.html',

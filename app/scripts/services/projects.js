@@ -8,21 +8,21 @@ angular.module('deve.rsApp')
                     {
                         "name": "Start.Represent.Us",
                         "quote": "Represent.Us is a fresh campaign to pass the American Anti-Corruption Act: a law that would overhaul campaign finance, impose strict lobbying and conflict of interest laws, and end secret political money. We are mobilizing millions of Americans - conservatives and progressives, young and old, every issue group fighting K Street, online and offline - to join this campaign.",
-                        "description": "The Represent.Us campaign site was built with user action and conversion rates as the #1 priority. Ease of use and clarity were the main pillars of the site's visual and interface design. I constructed the front-end of the website (<strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>) and the back-end integration with the <a href='http://actionkit.com/' target='_blank'>ActionKit</a> organizing platform API and database.",
+                        "description": "Start.Represent.Us was designed and implemented with the main goal of driving conversions through email virality, and with the ability to track, test and analyze mailings sent out to user's contact lists. The front-end was developed using <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong> leveraging Google's <strong>AngularJS</strong> framework to enable A/B testing of multiple userflows. The backend is powered by a bespoke admin interface implementing high-grade security practices, and also by a lightweight mailing enqueuing/testing server exposed via RESTful API. The site is also integrated with the <strong>ActionKit</strong> CRM system.",
                         "image": "start.jpg",
                         "work": [""]
                     },
                     {
                         "name": "Unlimited Corruption",
-                        "quote": "",
-                        "description": "",
+                        "quote": "Take control of your government. McCutcheon lets you spend as much money as you want bribing members of Congress, so you can take full control of your life - and everyone else's.",
+                        "description": "The McCutcheon Unlimited Corruption site was made to highlight the unprecendented levels of bribery and corruption that would ensue were the Supreme Court to rule in favor of McCutcheon in the <em>McCutcheon v FEC</em> case. The page was shipped quickly to stay relevant to current events using <strong>HTML5</strong> and Twitter's <strong>CSS</strong> & <strong>JavaScript</strong> framework <strong>Bootstrap</strong>.",
                         "image": "mccutcheon.jpg",
                         "work": [""]
                     },
                     {
                         "name": "Represent.Us",
                         "quote": "Represent.Us is a fresh campaign to pass the American Anti-Corruption Act: a law that would overhaul campaign finance, impose strict lobbying and conflict of interest laws, and end secret political money. We are mobilizing millions of Americans - conservatives and progressives, young and old, every issue group fighting K Street, online and offline - to join this campaign.",
-                        "description": "The Represent.Us campaign site was built with user action and conversion rates as the #1 priority. Ease of use and clarity were the main pillars of the site's visual and interface design. I constructed the front-end of the website (<strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>) and the back-end integration with the <a href='http://actionkit.com/' target='_blank'>ActionKit</a> organizing platform API and database.",
+                        "description": "The Represent.Us campaign site was built with user action and conversion rates as the #1 priority. Ease of use and clarity were the main pillars of the site's visual and interface design. I constructed the front-end of the website (<strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>) and the back-end: a highly tailored <strong>WordPress</strong> theme and a fully custom plugin enabling integration with the <a href='http://actionkit.com/' target='_blank'>ActionKit</a> organizing platform API and database to form a cohesive content management system.",
                         "image": "repus.jpg",
                         "work": [""]
                     },
