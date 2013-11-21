@@ -13,30 +13,38 @@ html, body {
 
 .view-animation.ng-enter,
 .view-animation.ng-leave {
-  -webkit-transition: all 0.25s linear;
-  transition: all 0.25s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   position: relative;
 }
 
 .view-animation.ng-enter {
-    transition-delay: 0.25s;
+    transition-delay: 0.5s;
 }
 
 .view-animation.ng-enter {
     // left: -100%;
     opacity: 0;
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0 10px #333;
 }
 .view-animation.ng-leave.ng-leave-active {
     // right: -100%;
     opacity: 0;
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0 10px #333;
 }
 .view-animation.ng-leave {
     // right: 0;
     opacity: 1;
+    color: #333;
+    text-shadow: 0 0 1px #fff;
 }
 .view-animation.ng-enter.ng-enter-active {
     // left: 0;
     opacity: 1;
+    color: #333;
+    text-shadow: 0 0 1px #fff;
 }
 
 
@@ -70,6 +78,20 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 40px;
     padding-bottom: 19px;
     float: left;
+
+    a {
+        color: #999999;
+        &:hover {
+            color: darken(#999, 10%);
+        }
+    }
+
+    a.email {
+        color: $link-color;
+        &:hover {
+            color: darken($link-color, 10%);
+        }
+    }
 
     .hidden-xs-inline {
         @media only screen and (max-width: 767px) {
@@ -152,6 +174,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.blurred {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 10px #333;
+}
+
 .headshot {
     margin: 0 0 1em 1em;
     max-width: 15em;
@@ -165,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
     background: {
         image: url(../images/title_cards/50.jpg);
         size: cover;
-        position: 0 50%;
+        position: 0 20%;
         repeat: no-repeat;
     }
 
@@ -179,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
         font-family: "Playball", serif;
         font-size: 6em;
         margin: 0;
-        text-shadow: 1px 1px 1px #333;
+        text-shadow: 1px 1px 3px #333;
     }
 }
 
@@ -218,7 +245,9 @@ footer {
         margin: 0;
 
         .list-label {
+            font-family: 'Roboto', sans-serif;
             vertical-align: middle;
+            font-weight: 300;
             font-size: 0.5em;
 
             @media only screen and (max-width: 767px) {

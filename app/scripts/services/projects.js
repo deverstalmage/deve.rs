@@ -29,7 +29,7 @@ angular.module('deve.rsApp')
                     {
                         "name": "unPAC",
                         "quote": "From social networks to town halls to blogs, unPAC amplifies our voices and sheds fresh light on modern political corruption. We are building a citizen-led movement large enough to restore the founding principles of our democracy.",
-                        "description": "I worked with the talented <a href='http://www.purpose.com/movements/unpac/' target='_blank'>Purpose team</a> to develop an easy to use and quick to update site for rapid response online campaigning. The site was built on top of <strong>Wordpress</strong> using a custom template and with the ability to withstand large amounts of daily traffic with no downtime or performance issues.",
+                        "description": "I worked with the talented <a href='http://www.purpose.com/movements/unpac/' target='_blank'>Purpose team</a> to develop an easy to use and quick to update site for rapid response online campaigning. The site was built on top of <strong>WordPress</strong> using a custom template and with the ability to withstand large amounts of daily traffic with no downtime or performance issues.",
                         "image": "unpac.jpg",
                         "work": [""]
                     },
@@ -57,14 +57,14 @@ angular.module('deve.rsApp')
                     {
                         "name": "United Republic",
                         "quote": "United Republic (UR) is a new, nonpartisan, nonprofit organization leading a groundbreaking campaign to confront and reform the undue influence of special interests in US politics. In November, 2013, UR is launching a bold grassroots campaign to get millions of Americans - from Occupy to the Tea Party - actively supporting comprehensive legislation that reshape American politics. The law would overhaul campaign finance, lobbying/quid-pro-quo and transparency laws. UR seeks to create a political system in which the needs and ideas of the many aren’t drowned out by the influence of the wealthy few.",
-                        "description": "Worked with <a href='http://www.tivix.com/' target='_blank'>Tivix</a> to develop a comprehensive online activism portal to fight the corrupting influence of money in politics. Used <strong>Python</strong> and <strong>Django</strong> for dynamic database driven functionality such as online volunteer recruitment and screening.",
+                        "description": "Worked with <a href='http://www.tivix.com/' target='_blank'>Tivix</a> to develop a comprehensive online activism portal to fight the corrupting influence of money in politics. Used <strong>Python</strong> and <strong>Django</strong> integrated with <strong>WordPress</strong> for dynamic database driven functionality such as online volunteer recruitment and screening.",
                         "image": "ur.jpg",
                         "work": [""]
                     },
                     {
                         "name": "Republic Report",
                         "quote": "Republic Report is dedicated to rooting out the corruption that is so corrosive to American values. We investigate and uncover the buying and selling of politicians and of institutions entrusted with upholding the public interest. We expose how big money distorts major policy decisions – harming our economy and our people.",
-                        "description": "Developed a custom <strong>WordPress</strong> theme with extensive custom functionality to ensure consistency and easy of use for multiple users and a large volume of readers.",
+                        "description": "Developed a <strong>WordPress</strong> theme with extensive custom functionality to ensure consistency and easy of use for multiple users and a large volume of readers.",
                         "image": "report.jpg",
                         "work": [""]
                     }

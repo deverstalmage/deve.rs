@@ -4,8 +4,7 @@ var deversApp = angular.module('deve.rsApp', ['ngRoute', 'ngSanitize', 'ngAnimat
 
 deversApp
     .config(function ($routeProvider) {
-        $routeProvider
-            .when('/', {
+        $routeProvider.when('/', {
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl',
                 title: 'Web Developer'
@@ -27,6 +26,8 @@ deversApp
 
 deversApp
     .run(function ($location, $rootScope) {
+        $rootScope.bgNum = Math.round(Math.random() * (50-1) + 1);
+        $rootScope.bgYPos = Math.round(Math.random() * 100);
         $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
             $rootScope.title = current.$$route.title;
         });
