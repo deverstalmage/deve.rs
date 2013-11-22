@@ -47,16 +47,17 @@
                 </div>
             </div>
 
-            <div class="title-card" style="background-image: url(../images/title_cards/{{bgNum}}.jpg); background-position: 0 {{bgYPos}}%; ">
-                <h1 ng-bind="title"><img src="images/ajax-loader.gif"></h1>
+            <div class="title-card" ng-style="{'background-image': 'url(../images/title_cards/' + bgNum + '.jpg)', 'background-position': '0 ' + bgYPos + '%'}"> <!-- style="background-image: url(../images/title_cards/{{bgNum}}.jpg); background-position: 0 {{bgYPos}}%" --><!---->
+                <h1 ng-bind="title"></h1><!---->
             </div>
 
             <div class="container view-animation" ng-view>
-                <p class="lead"></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, modi alias error sit saepe cumque rerum at libero sunt eaque mollitia ad placeat. Aliquam, nemo ipsum atque officia animi earum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, obcaecati voluptates quidem doloremque earum magni autem fugiat iure libero temporibus dolorum alias ullam non blanditiis saepe numquam reprehenderit optio pariatur.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, omnis, sapiente, illo, accusamus illum explicabo obcaecati fuga veritatis nisi voluptas sint velit rerum porro quasi numquam totam minima. Ratione, rerum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam atque deserunt qui rem dolores enim! Cumque, voluptates, harum, excepturi enim unde reprehenderit quos eum totam sint distinctio provident sapiente.</p>
+                <p class="lead">Hi, I'm Devers Talmage, a web developer based in <a href="https://www.google.com/maps/preview#!q=Northampton+MA&data=!4m15!2m14!1m13!1s0x89e6d73e7c8e2a05%3A0xc316750b13d8db0b!3m8!1m3!1d2485214!2d-71.6835014!3d42.0369215!3m2!1i2073!2i1258!4f13.1!4m2!3d42.3250896!4d-72.6412013" target="_blank">Northampton, MA</a>.</p>
+                <p>I create compelling and robust websites/web apps and software using modern, pragmatic practices. I excel in both front end and back end development, as well as data management, server administration, and deployment.</p>
+                <p>Currently I am working at <a href="https://represent.us/" target="_blank">Represent.Us</a>, a new non-profit working to end corruption and legal bribery in the American government.</p>
+                <p>When I'm not saving democracy, I enjoy traveling, discovering new music, rock climbing, and working on my own personal coding projects.  I have a BS in Computer Science from the University of Massachusetts, Amherst.</p>
+                <!-- <p>Right now, the technologies I most enjoy working with are: <code>Javascript</code> (specifically Google's awesome <a href="" target="_blank">AngularJS</a> framework), <code>PHP</code> (WordPress for its ubiquity and client familiarity, and <a href="http://slimframework.com" target="_blank">Slim Framework</a> for its flexibility), <code>HTML5</code> & <code>CSS3</code>, <code>MySQL</code>, and <code>Apache</code>. I also enjoy deploying on Amazon's Web Services including EC2, RDS, Route 53, S3, and CloudFront. -->
+                <p>If you'd like to work with me on a project, <a href="mailto:deverstalmage@gmail.com" target="_blank">get in touch</a>. Also, be sure to check out the <a href="#/projects">projects I've worked on</a>, as well as <a href="#/resume">my resume</a> if you're so inclined.</p>
             </div>
 
         </div>
@@ -105,9 +106,10 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
         <script src="scripts/services/projects.js"></script>
         <script src="scripts/services/skills.js"></script>
+        <script src="scripts/services/resume.js"></script>
+        <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/projects.js"></script>
         <script src="scripts/controllers/resume.js"></script>
         <!-- endbuild -->

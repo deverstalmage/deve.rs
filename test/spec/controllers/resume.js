@@ -3,7 +3,7 @@
 describe('Controller: ResumeCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('deversApp'));
+  beforeEach(module('deve.rsApp'));
 
   var ResumeCtrl,
     scope;
