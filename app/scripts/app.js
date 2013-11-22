@@ -1,6 +1,6 @@
 'use strict';
 
-var deversApp = angular.module('deve.rsApp', ['ngRoute', 'ngSanitize', 'ngAnimate', 'ngTouch']);
+var deversApp = angular.module('deve.rsApp', ['ngRoute', 'ngSanitize', 'ngAnimate', 'ngTouch', 'ngFitText']);
 
 deversApp
     .config(function ($routeProvider) {
@@ -26,14 +26,16 @@ deversApp
     });
 
 deversApp
-    .run(function ($location, $rootScope) {
+    .run(function ($location, $rootScope, $timeout) {
         $rootScope.bgNum = Math.round(Math.random() * (50-1) + 1);
         $rootScope.bgYPos = Math.round(Math.random() * 100);
         $rootScope.$on('$routeChangeStart', function (event, next, current) {
             $rootScope.showTitle = false;
         });
         $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-            $rootScope.showTitle = true;
-            $rootScope.title = current.$$route.title;
+            $timeout(function () {
+                $rootScope.showTitle = true;
+                $rootScope.title = current.$$route.title;
+            }, 250);
         });
     });
