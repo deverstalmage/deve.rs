@@ -11,10 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,400italic,500italic,300italic|Playball' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
@@ -47,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="title-card" ng-style="{'background-image': 'url(../images/title_cards/' + bgNum + '.jpg)', 'background-position': '0 ' + bgYPos + '%'}">
+            <div class="title-card" ng-style="{'background-image': 'url(images/title_cards/' + bgNum + '.jpg)', 'background-position': '0 ' + bgYPos + '%'}">
                 <h1 ng-bind="title" ng-class="{fadeIn: showTitle}" data-fittext data-fittext-min="40"></h1>
             </div>
 
