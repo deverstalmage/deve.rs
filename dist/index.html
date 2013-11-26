@@ -6,16 +6,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title ng-bind="'Deve.rs &mdash; ' + title">Deve.rs</title>
+        <title ng-bind="title ? 'Deve.rs &mdash; ' + title : 'Deve.rs'">Deve.rs</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,300,400italic,500italic,300italic|Playball" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/276ac85f.main.css">
+        <link rel="stylesheet" href="styles/552e5dd2.main.css">
     </head>
-    <body>
+    <body ng-cloak="">
         <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="title-card" ng-style="{'background-image': 'url(images/title_cards/' + bgNum + '.jpg)', 'background-position': '0 ' + bgYPos + '%'}">
+            <div class="title-card" ng-style="{'background-image': 'url(images/title_cards/' + bgNum + '.jpg)', 'background-position': '0 ' + bgYPos + '%'}" ng-show="title">
                 <h1 ng-bind="title" ng-class="{fadeIn: showTitle}" data-fittext="" data-fittext-min="40"></h1>
             </div>
 
