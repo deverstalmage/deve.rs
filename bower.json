@@ -13,9 +13,18 @@
     "angular-route": "~1.2.0",
     "angular-touch": "~1.2.1",
     "angular-animate": "~1.2.1",
-    "lodash": "~2.3.0"
+    "lodash": "~2.3.0",
+    "angular-moment": "~0.5.2",
+    "moment": "~2.4.0",
+    "angulartics": "~0.8.5",
+    "angular-google-analytics": "*"
   },
   "devDependencies": {
+    "angular-mocks": "~1.2.0",
+    "angular-scenario": "~1.2.0"
+  },
+  "resolutions": {
+    "angular": "~1.2.0",
     "angular-mocks": "~1.2.0",
     "angular-scenario": "~1.2.0"
   }

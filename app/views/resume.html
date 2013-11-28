@@ -1,1 +1,6 @@
-<h2>Resume coming soon!</h2>
+<div ng-repeat="section in resume">
+    <h3>{{section.title}}</h3>
+    <ul>
+        <li ng-repeat="item in section">{{item}}</li>
+    </ul>
+</div>
